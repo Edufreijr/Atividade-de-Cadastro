@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulário de Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <form>
+
+        <h2>Cadastro</h2>
+
+        <label for="nome">Nome:</label>
+        <input
+            type="text"
+            id="nome"
+            placeholder="Digite seu nome"
+            maxlength="50"
+            minlength="3"
+            autocomplete="name"
+            autofocus
+            required
+        >
+
+        <label for="email">Email:</label>
+        <input
+            type="email"
+            id="email"
+            placeholder="Digite seu email"
+            maxlength="100"
+            autocomplete="email"
+            required
+        >
+
+        <label for="senha">Senha:</label>
+        <input
+            type="password"
+            id="senha"
+            placeholder="Digite sua senha"
+            maxlength="20"
+            minlength="6"
+            autocomplete="off"
+            required
+        >
+
+        <label for="data">Data de nascimento:</label>
+        <input
+            type="date"
+            id="data"
+            required
+        >
+
+        <label for="interesse">Área de interesse:</label>
+        <select id="interesse" required>
+            <option value="">Selecione</option>
+            <option value="esportes">Esportes</option>
+            <option value="musica">Música</option>
+            <option value="filmes">Filmes</option>
+            <option value="jogos">Jogos</option>
+            <option value="viagens">Viagens</option>
+        </select>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea
+            id="mensagem"
+            placeholder="Digite sua mensagem"
+            maxlength="300"
+            rows="5"
+        ></textarea>
+
+        <button type="submit">Enviar</button>
+
+    </form>
+
+</body>
+
+</html>
